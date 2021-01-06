@@ -1,0 +1,17 @@
+{
+  "mozsearch_path": "$MOZSEARCH_PATH",
+
+  "default_tree": "postgres",
+
+  "trees": {
+    "postgres": {
+      "index_path": "$WORKING/postgres",
+      "files_path": "$WORKING/postgres/git",
+      "git_path": "$WORKING/postgres/git",
+      "github_repo": "git://git.postgresql.org/git/postgresql.git",
+      "objdir_path": "$WORKING/postgres/objdir",
+      "codesearch_path": "$WORKING/postgres/livegrep.idx",
+      "codesearch_port": 8081
+    }
+  }
+}

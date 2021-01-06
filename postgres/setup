@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -x # Show commands
+set -eu # Errors/undefined vars are fatal
+set -o pipefail # Check all commands in a pipeline
+
+date
+
+pushd $INDEX_ROOT
+
+if [ -d "git" ]
+then
+    echo "Found pre-existing git folder; skipping re-clone."
+else
+    git clone git://git.postgresql.org/git/postgresql.git git
+fi
+
+popd
+
+date
